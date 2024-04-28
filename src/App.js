@@ -50,75 +50,92 @@ function App() {
         }
     }
     return (<div className="App">
-            <h1>React Calculator</h1>
-            <input type="text" style={{margin: "10px"}} name="input" value={input}></input>
-            <div>{result}</div>
-            <div style={{display: "flex", flexWrap: "wrap", padding: "10px", justifyContent: "center", gap: "1"}}>
-                <div style={{width: "200px", height: "200px"}}>
-                    <input type="button" value="7" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("7"))
-                    }}>
-                    </input>
-                    <input type="button" value="8" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("8"))
-                    }}>
-                    </input>
-                    <input type="button" value="9" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("9"))
-                    }}>
-                    </input>
-                    <input type="button" value="+" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("+"))
-                    }}>
-                    </input>
-                    <input type="button" value="4" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("4"))
-                    }}>
-                    </input>
-                    <input type="button" value="5" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("5"))
-                    }}>
-                    </input>
-                    <input type="button" value="6" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("6"))
-                    }}>
-                    </input>
-                    <input type="button" value="-" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("-"))
-                    }}>
-                    </input>
-                    <input type="button" value="1" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("1"))
-                    }}>
-                    </input>
-                    <input type="button" value="2" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("2"))
-                    }}>
-                    </input>
-                    <input type="button" value="3" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("3"))
-                    }}>
-                    </input>
-                    <input type="button" value="*" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("*"))
-                    }}>
-                    </input>
-                    <input type="button" value="C" style={buttonStyle} onClick={(e) => {
-                        setInput("")
-                    }}>
-                    </input>
-                    <input type="button" value="0" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("0"))
-                    }}>
-                    </input>
-                    <input type="button" value="=" style={buttonStyle} onClick={handleCalculation}></input>
-                    <input type="button" value="/" style={buttonStyle} onClick={(e) => {
-                        setInput((prevState) => prevState.concat("/"))
-                    }}>
-                    </input>
-                </div>
+        <h1>React Calculator</h1>
+        <input type="text" style={{margin: "10px"}} name="input" value={input}></input>
+        <div>{result}</div>
+        <div style={{display: "flex", flexWrap: "wrap", padding: "10px", justifyContent: "center", gap: "1"}}>
+            <div style={{width: "200px", height: "200px"}}>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("7"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="7"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("8"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="8"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("9"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="9"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("+"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="+"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("4"))
+                }}>
+                    input type="button" style={{border: "0px"}} value="4"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("5"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="5"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("6"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="6"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("-"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="-"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("1"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="1"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("2"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="2"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("3"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="3"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("*"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="*"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput("")
+                }}>
+                    <input type="button" style={{border: "0px"}} value="C"/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("0"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="0"/>
+                </button>
+                <button style={buttonStyle} onClick={handleCalculation}>
+                    <input type="button" style={{border: "0px"}} value="="/>
+                </button>
+                <button style={buttonStyle} onClick={(e) => {
+                    setInput((prevState) => prevState.concat("/"))
+                }}>
+                    <input type="button" style={{border: "0px"}} value="/"/>
+                </button>
             </div>
-        </div>);
+        </div>
+    </div>);
 }
 
 export default App;
