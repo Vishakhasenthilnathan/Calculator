@@ -49,91 +49,91 @@ function App() {
             setResult(numbers[0]);
         }
     }
-    return (<div className="App">
+    return (<div>
         <h1>React Calculator</h1>
         <input type="text" style={{margin: "10px"}} name="input" value={input}></input>
         <div>{result}</div>
-        <div style={{display: "flex", flexWrap: "wrap", padding: "10px", justifyContent: "center", gap: "1"}}>
-            <div style={{width: "250px", height: "250px"}}>
+        <div style={{display: "flex", flexWrap: "wrap", padding: "10px", width: "200px", height: "200px"}}>
+            {/*<div style={{width: "200px", height: "200px"}}>*/}
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("7"))
-                }}>
-                    <input type="button" value="7" style={{border: "0px solid"}}/>
+                }}>7
+                    {/*<input type="button" value="7" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("8"))
-                }}>
-                    <input type="button" value="8" style={{border: "0px solid"}}/>
+                }}>8
+                    {/*<input type="button" value="8" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("9"))
-                }}>
-                    <input type="button" value="9" style={{border: "0px solid"}}/>
+                }}>9
+                    {/*<input type="button" value="9" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("+"))
-                }}>
-                    <input type="button" value="+" style={{border: "0px solid"}}/>
+                }}>+
+                    {/*<input type="button" value="+" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("4"))
-                }}>
-                    <input type="button" value="4" style={{border: "0px solid"}}/>
+                }}>4
+                    {/*<input type="button" value="4" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("5"))
-                }}>
-                    <input type="button" value="5" style={{border: "0px solid"}}/>
+                }}>5
+                    {/*<input type="button" value="5" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("6"))
-                }}>
-                    <input type="button" value="6" style={{border: "0px solid"}}/>
+                }}>6
+                    {/*<input type="button" value="6" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("-"))
-                }}>
-                    <input type="button" value="-" style={{border: "0px solid"}}/>
+                }}>-
+                    {/*<input type="button" value="-" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("1"))
-                }}>
-                    <input type="button" value="1" style={{border: "0px solid"}}/>
+                }}>1
+                    {/*<input type="button" value="1" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("2"))
-                }}>
-                    <input type="button" value="2" style={{border: "0px solid"}}/>
+                }}>2
+                    {/*<input type="button" value="2" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("3"))
-                }}>
-                    <input type="button" value="3" style={{border: "0px solid"}}/>
+                }}>3
+                    {/*<input type="button" value="3" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("*"))
-                }}>
-                    <input type="button" value="*" style={{border: "0px solid"}}/>
+                }}>*
+                    {/*<input type="button" value="*" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput("")
-                }}>
-                    <input type="button" value="C" style={{border: "0px solid"}}/>
+                }}>C
+                    {/*<input type="button" value="C" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("0"))
-                }}>
-                    <input type="button" value="0" style={{border: "0px solid"}}/>
+                }}>0
+                    {/*<input type="button" value="0" style={{border: "0px solid"}}/>*/}
                 </button>
-                <button style={buttonStyle} onClick={handleCalculation}>
-                    <input type="button" value="=" style={{border: "0px solid"}}/>
+                <button style={buttonStyle} onClick={handleCalculation}>=
+                    {/*<input type="button" value="=" style={{border: "0px solid"}}/>*/}
                 </button>
                 <button style={buttonStyle} onClick={(e) => {
                     setInput((prevState) => prevState.concat("/"))
-                }}>
-                    <input type="button" value="/" style={{border: "0px solid"}}/>
+                }}>/
+                    {/*<input type="button" value="/" style={{border: "0px solid"}}/>*/}
                 </button>
-            </div>
+            {/*</div>*/}
         </div>
     </div>);
 }
